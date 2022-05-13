@@ -1,6 +1,5 @@
-:root {
-    --altura: 9;
-    --ancho: 13;
+root {
+    padding: auto;
 }
 
 body {
@@ -92,8 +91,8 @@ h1 {
     display: grid;
     text-align: center;
     background-color: rgb(225, 225, 225);
-    grid-template-columns: repeat(var(--ancho), 40px);
-    grid-template-rows: repeat(var(--altura), 40px);
+    grid-template-columns: repeat(13, 40px);
+    grid-template-rows: repeat(9, 40px);
     box-shadow: 0px 0px 10px 10px rgba(98, 98, 255, 0.236);
 }
 

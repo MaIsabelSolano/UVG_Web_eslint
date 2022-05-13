@@ -4,6 +4,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "eslint:recommended",
     'plugin:react/recommended',
     'airbnb',
   ],
@@ -12,9 +13,10 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 'latest',
+    parser: "@babel/eslint-parser",
   },
   plugins: [
-    'react',
+    'react', 'html', 'css',
   ],
   rules: {
     "indent":["error", 4],
@@ -35,5 +37,6 @@ module.exports = {
     "no-else-return":"off",
     "react/jsx-wrap-multilines":"off",
     "react/function-component-definition":"off",
+    "semi-style": ["error", "last"],
   },
 };
